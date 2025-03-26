@@ -9,5 +9,5 @@ import aliikbal.model.JobHistory;
 
 @Repository
 public interface JobHistoryRepository extends JpaRepository<JobHistory, Long> {
-    List<JobHistory> findByEmployeeId(Long employeeId);
+    List<JobHistory> findByEmployee_Id(Long employeeId);
 }

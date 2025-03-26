@@ -28,4 +28,9 @@ public class JobHistory {
     private BigDecimal salary;
     private LocalDate startDate;
     private LocalDate endDate;
+
+    public Long getEmployeeId() {
+        return employee != null ? employee.getId() : null;
+    }
+
 }
