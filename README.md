@@ -2,12 +2,6 @@
 ## Description 
  API ini menyediakan laporan dalam format JasperReports untuk menampilkan Job History dan Employee Report berdasarkan parameter tertentu.
 
-
-# API Documentation
-
-## Overview
-API ini menyediakan laporan dalam format JasperReports untuk menampilkan Job History dan Employee Report berdasarkan parameter tertentu.
-
 ## Base URL
 ```
 http://localhost:8080/reports
