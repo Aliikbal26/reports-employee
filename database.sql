@@ -1,3 +1,29 @@
+CREATE DATABASE employee_db;
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    department VARCHAR(50),
+    salary DECIMAL(10,2),
+    hire_date DATE
+);
+
+CREATE TABLE job_history (
+    id SERIAL PRIMARY KEY,
+    employee_id INT REFERENCES employees(id),
+    position VARCHAR(100),
+    salary DECIMAL(10,2),
+    start_date DATE,
+    end_date DATE
+);
+
+CREATE TABLE performance_evaluations (
+    id SERIAL PRIMARY KEY,
+    employee_id INT REFERENCES employees(id),
+    year INT,
+    rating INT,
+    feedback TEXT
+);
+
 INSERT INTO employees (name, department, salary, hire_date) VALUES
 ('Ali Ikbal', 'IT', 12000.00, '2020-05-15'),
 ('Budi Santoso', 'Finance', 9000.00, '2019-07-10'),
